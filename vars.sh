@@ -1,0 +1,17 @@
+#! /bin/bash
+INSTALL_PATH=/opt/cross
+TARGET=x86_64-linux
+USE_NEWLIB=0
+LINUX_ARCH=x86_64
+CONFIGURATION_OPTIONS="--disable-multilib --disable-nls" # --disable-threads --disable-shared
+PARALLEL_MAKE=-j4
+BINUTILS_VERSION=binutils-2.25
+GCC_VERSION=gcc-4.9.2
+LINUX_KERNEL_VERSION=linux-3.17.2
+GLIBC_VERSION=glibc-2.20
+MPFR_VERSION=mpfr-3.1.2
+GMP_VERSION=gmp-6.0.0a
+MPC_VERSION=mpc-1.0.2
+ISL_VERSION=isl-0.12.2
+CLOOG_VERSION=cloog-0.18.1
+export PATH=$INSTALL_PATH/bin:$PATH
